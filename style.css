@@ -1,0 +1,290 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fundo mais suave */
+    color: #333333; /*cor texto*/
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0088a3;
+    padding: 10px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o logo e o título */
+    justify-content: center; /* Centraliza horizontalmente o logo e o título */
+    text-align: center; /* Garante que o texto do título fique centralizado */
+}
+
+.logo {
+    max-width: 100px; /* Tamanho da logo */
+    height: auto;
+    margin-right: 20px; /* Espaço entre a logo e o título */
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.5; /* Ajusta o espaçamento entre as linhas do texto */
+}
+
+/* Títulos */
+h1 {
+    font-size: 32px; /* Tamanho maior para o título principal */
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center; /* Centraliza o menu de navegação */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaçamento entre os itens */
+    height: 20px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #20B2AA;
+}
+
+
+/* Títulos */
+h1 {
+    font-size: 32px; /* Tamanho maior para o título principal */
+    margin: 0; /* Remove margens desnecessárias */
+    text-align: center; /* Centraliza o texto */
+}
+
+
+
+h2 {
+    color: #333333;
+    font-size: 28px;
+    text-align: center;
+}
+
+h3 {
+    color: #333333;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Seções */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Listagem de Empresas Parceiras */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #ecf0f1;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parceiros {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.parceiros > .empresa-info {
+    margin-left: 20px;
+}
+
+
+.empresa-info strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.quem-somos {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Rotas Principais */
+.rotas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rota {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o conteúdo horizontalmente */
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da caixa */
+    border-radius: 8px; /* Arredonda os cantos da caixa */
+    max-width: 300px; /* Limita a largura da caixa de cada rota */
+    margin: 15px auto; /* Adiciona espaço entre as rotas e centraliza na tela */
+}
+
+
+.rota-imagem {
+    width: 100%;
+    max-width: 250px; /* Limita a largura das imagens */
+    height: 150px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+
+.rota-info {
+    text-align: center; /* Centraliza o texto */
+}
+
+.rota-info p {
+    font-size: 18px;
+    color: #333;
+}
+
+.botaocomprar {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.rota-info > .comprar-button,
+.botaocomprar > a {
+    border-radius: 20px;
+    border: 2px solid green; /* Define a espessura e cor da borda */
+    background-color: green;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    max-width: 150px; /* Limita a largura do botão */
+}
+
+.rota-info > .comprar-button:hover {
+    background-color: green;
+    transform: scale(1.1); /* Animação suave no hover */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0088a3;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #25d366;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+.mais-rotas {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mais-rotas-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Altere a cor conforme seu design */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.mais-rotas-button:hover {
+    background-color: #0056b3; /* Cor mais escura para hover */
+}
+
+
+/* esponsividade para resoluções menores */
+@media (max-width: 1024px) {
+    .rotas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rota {
+        max-width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rota {
+        max-width: 90%;
+    }
+
+    .logo {
+        width: 60px; /* Reduz o tamanho do logo em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .rota {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
