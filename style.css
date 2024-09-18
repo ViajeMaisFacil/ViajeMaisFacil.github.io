@@ -1,4 +1,4 @@
-/* Estilos Globais */
+/* Estilos Globais*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,6 +26,7 @@ header {
     max-width: 100px; /* Tamanho da logo */
     height: auto;
     margin-right: 20px; /* Espaço entre a logo e o título */
+    margin-left: 0; /* Remove qualquer margem à esquerda */
 }
 
 h1 {
@@ -52,11 +53,13 @@ nav a {
     color: #333333;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 nav a:hover {
     text-decoration: underline;
     color: #20B2AA;
+    
 }
 
 /* Títulos */
@@ -235,6 +238,16 @@ footer {
 
 .whatsapp-button:hover {
     background-color: #128c7e;
+}
+
+/* Estilos para centralizar a imagem */
+.imagem-centralizada {
+    text-align: center;
+    margin: 20px 0;
+}
+.imagem-centralizada img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Responsividade para resoluções menores */
