@@ -4,14 +4,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5; /* Fundo mais suave */
-    color: #333333; /*cor texto*/
+    color: #333333; /* Cor do texto */
 }
 
 /* Cabeçalho */
 header {
     background-color: #0088a3;
-    padding: 10px;
+    padding: 20px;
     color: white;
+    text-align: center; /* Garante centralização do texto */
 }
 
 .logo-container {
@@ -31,11 +32,7 @@ h1 {
     font-size: 24px;
     margin: 0;
     line-height: 1.5; /* Ajusta o espaçamento entre as linhas do texto */
-}
-
-/* Títulos */
-h1 {
-    font-size: 32px; /* Tamanho maior para o título principal */
+    text-align: center; /* Centraliza o texto do título */
 }
 
 /* Menu de navegação */
@@ -49,7 +46,6 @@ nav ul {
 
 nav ul li {
     margin-right: 20px; /* Espaçamento entre os itens */
-    height: 20px;
 }
 
 nav a {
@@ -63,26 +59,18 @@ nav a:hover {
     color: #20B2AA;
 }
 
-
 /* Títulos */
-h1 {
-    font-size: 32px; /* Tamanho maior para o título principal */
-    margin: 0; /* Remove margens desnecessárias */
-    text-align: center; /* Centraliza o texto */
+h2, h3 {
+    color: #333333;
+    text-align: center;
 }
 
-
-
 h2 {
-    color: #333333;
     font-size: 28px;
-    text-align: center;
 }
 
 h3 {
-    color: #333333;
     font-size: 24px;
-    text-align: center;
 }
 
 p {
@@ -111,6 +99,7 @@ li {
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid #ccc; /* Adiciona uma borda fina */
 }
 
 .parceiros {
@@ -121,7 +110,6 @@ li {
 .parceiros > .empresa-info {
     margin-left: 20px;
 }
-
 
 .empresa-info strong {
     display: block;
@@ -155,7 +143,6 @@ li {
     margin: 15px auto; /* Adiciona espaço entre as rotas e centraliza na tela */
 }
 
-
 .rota-imagem {
     width: 100%;
     max-width: 250px; /* Limita a largura das imagens */
@@ -166,7 +153,6 @@ li {
     margin-bottom: 15px;
 }
 
-
 .rota-info {
     text-align: center; /* Centraliza o texto */
 }
@@ -176,17 +162,17 @@ li {
     color: #333;
 }
 
+/* Botão Comprar */
 .botaocomprar {
     margin-top: 15px;
     display: flex;
     justify-content: center;
 }
 
-.rota-info > .comprar-button,
-.botaocomprar > a {
+.comprar-button {
     border-radius: 20px;
-    border: 2px solid green; /* Define a espessura e cor da borda */
-    background-color: green;
+    border: 2px solid #28a745; /* Define a espessura e cor da borda */
+    background-color: #28a745; /* Cor verde */
     padding: 10px 20px;
     text-decoration: none;
     color: white;
@@ -195,11 +181,35 @@ li {
     display: inline-block;
     width: 100%;
     max-width: 150px; /* Limita a largura do botão */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Animações suaves */
 }
 
-.rota-info > .comprar-button:hover {
-    background-color: green;
-    transform: scale(1.1); /* Animação suave no hover */
+.comprar-button:hover {
+    background-color: #218838; /* Cor verde mais escura no hover */
+    border-color: #1e7e34; /* Cor da borda no hover */
+    transform: scale(1.05); /* Leve aumento no hover */
+}
+
+/* Botão Ver Mais */
+.mais-rotas {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mais-rotas-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745; /* Cor verde */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Animações suaves */
+}
+
+.mais-rotas-button:hover {
+    background-color: #218838; /* Cor verde mais escura no hover */
+    transform: scale(1.05); /* Leve aumento no hover */
 }
 
 /* Rodapé */
@@ -227,28 +237,7 @@ footer {
     background-color: #128c7e;
 }
 
-.mais-rotas {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.mais-rotas-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff; /* Altere a cor conforme seu design */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.mais-rotas-button:hover {
-    background-color: #0056b3; /* Cor mais escura para hover */
-}
-
-
-/* esponsividade para resoluções menores */
+/* Responsividade para resoluções menores */
 @media (max-width: 1024px) {
     .rotas-container {
         flex-direction: column;
