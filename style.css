@@ -15,6 +15,12 @@ header {
     text-align: center; /* Garante centralização do texto */
 }
 
+img.logo {
+    max-width: 100px; /* Ajuste o tamanho do logotipo conforme necessário */
+    margin-right: 20px; /* Espaçamento entre o logotipo e o restante do conteúdo */
+    margin-left: 0;
+}
+
 .logo-container {
     display: flex;
     align-items: center; /* Centraliza verticalmente o logo e o título */
@@ -214,6 +220,138 @@ li {
     background-color: #218838; /* Cor verde mais escura no hover */
     transform: scale(1.05); /* Leve aumento no hover */
 }
+
+/* Avaliações */
+.avaliacoes {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.avaliacao {
+    margin-bottom: 20px;
+}
+
+.avaliacao p {
+    margin: 0 0 10px;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0088a3;
+    color: white;
+    padding: 10px;
+}
+
+/* Perguntas */
+.perguntas {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pergunta {
+    margin-bottom: 20px;
+}
+
+.pergunta h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.pergunta p {
+    margin: 0;
+}
+
+/* Seção de Contato */
+.contato {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0088a3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007693;
+}
+
+/* Seção Sobre Nós */
+.sobre-nos {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-nos h3 {
+    margin-top: 20px;
+    color: #0088a3;
+}
+
+.sobre-nos p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.sobre-nos ul {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.sobre-nos ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
 
 /* Rodapé */
 footer {

@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passagens Rodoviárias - ViajeMaisFácil</title>
+    <title>Contato - ViajeMaisFácil</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/viajemaisfacil.ico" type="image/x-icon">
 </head>
 <body>
     <header>
+        <img src="img/ViajeMaisFácilLogo - Copia.jpg" alt="Logo da ViajeMaisFácil" class="logo">
         <div class="logo-container">
-            <img src="img/ViajeMaisFácilLogo.jpg" alt="Logo da ViajeMaisFácil" class="logo">
-            <h1>Bem-vindo à ViajeMaisFácil<br>Compre suas passagens sem taxa e com atendimento via WhatsApp!</h1>
+            <h1>Entre em Contato Conosco</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="empresas.html">Empresas Parceiras</a></li>
-                <li><a href="maisrotas.html">Rotas</a></li>
+                <li><a href="maisrotas.html">Destinos</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="perguntas.html">Perguntas</a></li>
-                <li><a href="avaliacoes.html">Avaliações</a></li>                                
+                <li><a href="avaliacoes.html">Avaliações</a></li>
             </ul>
         </nav>
     </header>
 
+    <main>
+        <section class="contato">
+            <h2>Fale Conosco</h2>
+            <form id="contatoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
 
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    <br><br><br><br><br>
 
-
-
-
-
-
-
-
-
-
-<!-- rodape -->
-<footer>
-    <div class="rodape"><a href="https://wa.me/message/R7VWQK42I2IEE1" target="_blank" class="whatsapp-button">Fale Conosco no WhatsApp</a></div>
-    <p>&copy; 2024 Seu Site de Passagens. Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <div class="rodape">
+            <a href="https://wa.me/message/R7VWQK42I2IEE1" target="_blank" class="whatsapp-button">Fale Conosco no WhatsApp</a>
+        </div>
+        <p>&copy; 2024 ViajeMaisFácil. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
