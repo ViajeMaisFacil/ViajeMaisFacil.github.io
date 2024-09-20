@@ -171,6 +171,30 @@ li {
     color: #333;
 }
 
+/* Estilos para a seção de busca */
+#busca {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    flex-direction: column; /* Coloca o título e o campo de busca em coluna */
+}
+
+#busca h2 {
+    margin-bottom: 10px; /* Espaçamento entre o título e o campo de busca */
+    text-align: center; /* Centraliza o texto do título */
+}
+
+#busca input {
+    width: 300px; /* Ajuste o tamanho do campo de busca conforme necessário */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Centraliza o texto digitado */
+}
+
+
 /* Botão Comprar */
 .botaocomprar {
     margin-top: 15px;
