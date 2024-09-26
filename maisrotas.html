@@ -9,16 +9,16 @@
     <link rel="icon" href="img/viajemaisfacil.ico" type="image/x-icon">
     <script>
         function buscarRotas() {
-            let input, filter, container, rotas, info, i, txtValue;
+            let input, filter, container, rotas, img, i, altValue;
             input = document.getElementById('buscaInput');
             filter = input.value.toUpperCase();
             container = document.getElementsByClassName('rotas-container')[0];
             rotas = container.getElementsByClassName('rota');
-
+    
             for (i = 0; i < rotas.length; i++) {
-                info = rotas[i].getElementsByTagName("h3")[0];
-                txtValue = info.textContent || info.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                img = rotas[i].getElementsByTagName("img")[0];
+                altValue = img.alt || "";
+                if (altValue.toUpperCase().indexOf(filter) > -1) {
                     rotas[i].style.display = "";
                 } else {
                     rotas[i].style.display = "none";
@@ -26,6 +26,7 @@
             }
         }
     </script>
+    
 </head>
 <body>
     <header>
@@ -61,7 +62,7 @@
             <!-- Porto Alegre até São Paulo -->
             <div class="rota">
                 <a href="saopaulo.html">
-                <img src="img/porto-alegre-sao-paulo (2).jpg" alt="Porto Alegre até São Paulo" class="rota-imagem"> </a>
+                <img src="img/porto-alegre-sao-paulo (2).jpg" alt="Porto Alegre até São Paulo,sao paulo" class="rota-imagem"> </a>
                 <div class="rota-info">
                     <h3>Porto Alegre até <br>São Paulo <br>Empresa Penha</h3>
                     <p>A partir de R$ 279,90 em até 6x sem juros</p>
@@ -74,7 +75,7 @@
             <!-- Porto Alegre até Curitiba -->
             <div class="rota">
                 <a href="curitiba.html">
-                <img src="img/Curitiba.jpg" alt="Porto Alegre até Curitiba Empresa Penha" class="rota-imagem"></a>
+                <img src="img/Curitiba.jpg" alt="Porto Alegre até Lages,Santa Cecilia, Mafra, Curitiba Empresa Penha" class="rota-imagem"></a>
                 <div class="rota-info">
                     <h3>Porto Alegre até<br>Curitiba<br>Empresa Penha</h3>
                     <p>A partir de R$ 149,90 em até 6x sem juros</p>
@@ -86,7 +87,8 @@
 
             <!-- Porto Alegre até Itapema -->
             <div class="rota">
-                <img src="img/Itapema.jpg" alt="Porto Alegre até Itapema" class="rota-imagem">
+                <a href="Itapema.html">
+                <img src="img/Itapema.jpg" alt="Porto Alegre até Itapema" class="rota-imagem"></a>
                 <div class="rota-info">
                     <h3>Porto Alegre até<br>Itapema<br> Empresa Penha</h3>
                     <p>A partir de R$ 119,90 em até 6x sem juros</p>
@@ -110,7 +112,8 @@
 
             <!-- Porto Alegre até Goiânia -->
             <div class="rota">
-                <img src="img/goiania.jpg" alt="Porto Alegre até Goiânia" class="rota-imagem">
+                <a href="Goiania.html">
+                <img src="img/goiania.jpg" alt="Porto Alegre até Goiânia" class="rota-imagem"></a>
                 <div class="rota-info">
                     <h3>Porto Alegre até<br>Goiânia <br>Escala São Paulo</h3>
                     <p>A partir de R$ 449,90 em até 6x sem juros</p>
@@ -134,7 +137,9 @@
 
             <!-- Porto Alegre até Salvador -->
             <div class="rota">
-                <img src="img/porto-alegre-salvador.jpg" alt="Porto Alegre até Salvador" class="rota-imagem">
+                <a href="salvador.html">
+                <img src="img/porto-alegre-salvador.jpg" alt="Porto Alegre até Salvador:Uberaba, Uberlândia, Patrocínio, Patos de Minas, Pirapora, Montes Claros,
+                    Francisco Sá, Salinas, Cândido Sales, Vitória da Conquista, Poçôes, Jequié, Feira de Santana" class="rota-imagem"></a>
                 <div class="rota-info">
                     <h3>Porto Alegre até<br>Salvador<br>Escala São Paulo</h3>
                     <p>A partir de R$ 649,90 em até 6x sem juros</p>
@@ -161,7 +166,7 @@
     <br><br><br><br><br>
 
     <footer>
-        <div class="rodape"><a href="https://wa.me/message/R7VWQK42I2IEE1" target="_blank" class="whatsapp-button">Fale Conosco no WhatsApp</a></div>
+        <div class="rodape"><a href="https://wa.me/5551992213031" target="_blank" class="whatsapp-button">Fale Conosco no WhatsApp</a></div>
         <p>&copy; 2024 Seu Site de Passagens. Todos os direitos reservados.</p>
     </footer>
 </body>
