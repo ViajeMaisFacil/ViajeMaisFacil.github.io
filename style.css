@@ -412,6 +412,59 @@ footer {
     height: auto;
 }
 
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Largura máxima do slideshow */
+    height: 400px; /* Altura do slideshow */
+    overflow: hidden; /* Esconde imagens que não estão visíveis */
+    margin: auto; /* Centraliza o slideshow */
+}
+
+.slide {
+    display: none; /* Esconde todas as imagens inicialmente */
+}
+
+img {
+    width: 100%; /* Imagens ocupam toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Exibe a primeira imagem */
+.slide.active {
+    display: block; /* Exibe a imagem ativa */
+}
+
+/* Animação de fade */
+.fade {
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo para JavaScript */
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+        // Esconde todas as imagens
+        slides.forEach(slide => slide.classList.remove('active'));
+        // Exibe a próxima imagem
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+    // Exibe a primeira imagem
+    slides[index].classList.add('active');
+    // Troca de imagens a cada 3 segundos
+    setInterval(showSlides, 3000);
+</script>
+
+
 /* Responsividade para resoluções menores */
 @media (max-width: 1024px) {
     .rotas-container {
