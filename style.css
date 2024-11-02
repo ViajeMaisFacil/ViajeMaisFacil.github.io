@@ -132,13 +132,13 @@ li {
     line-height: 1.6;
 }
 
-/* Rotas Principais */
 .rotas-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin: 20px; /* Espaçamento ao redor do contêiner */
 }
+
 
 .rota {
     display: flex;
@@ -149,7 +149,7 @@ li {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da caixa */
     border-radius: 8px; /* Arredonda os cantos da caixa */
     max-width: 300px; /* Limita a largura da caixa de cada rota */
-    margin: 15px auto; /* Adiciona espaço entre as rotas e centraliza na tela */
+    margin: 15px; /* Adiciona espaço entre as rotas */
 }
 
 .rota-imagem {
@@ -226,7 +226,8 @@ li {
 /* Botão Ver Mais */
 .mais-rotas {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0; /* Espaçamento acima e abaixo do botão */
+    width: 100%; /* Faz o botão ocupar toda a largura do contêiner */
 }
 
 .mais-rotas-button {
@@ -238,11 +239,25 @@ li {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s; /* Animações suaves */
+    width: 100%; /* Faz o botão ocupar toda a largura do contêiner */
+    max-width: 300px; /* Limita a largura máxima do botão */
 }
 
 .mais-rotas-button:hover {
     background-color: #218838; /* Cor verde mais escura no hover */
     transform: scale(1.05); /* Leve aumento no hover */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .rotas-container {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    .rota {
+        max-width: 90%; /* Limita a largura das rotas em telas menores */
+    }
 }
 
 /* Avaliações */
